@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_notes">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:padding="20dp"
+        android:hint="TITLE"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/content_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_text"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorPrimary"
+        android:gravity="top"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:maxImageSize="35sp"
+        app:rippleColor="@color/white"
+        android:src="@drawable/ic_baseline_save_24"/>
+
+</RelativeLayout>
